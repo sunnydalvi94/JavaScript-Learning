@@ -1,6 +1,6 @@
 <html>
   <body>
-        <h3> Challenge 1</h3>
+        <h3>Challenge 1</h3>
     <h4>
         <pre>
         Mark and John are trying to compare their BMI (Body Mass Index), which is
@@ -19,6 +19,19 @@
         </pre>
   </body>
   <script>
-        
+      let markMass=90;// in kg
+      let markHeight=1.8;// in meter
+      let johnMass=75;
+      let johnHeight=1.75;
+      //  BMI = mass/height ** 2;
+      //  BMI = mass/ (height * height);
+      let BMI_mark= markMass/(markHeight * markHeight);
+      let BMI_john= johnMass/(johnHeight * johnHeight);
+      let markHigherBMI=BMI_mark > BMI_john;
+      console.log("BMI of mark is: "+BMI_mark);
+      console.log("BMI of john is: "+BMI_john);
+
+      console.log("isMarkBmiHigher: "+markHigherBMI);
+      console.log("Congrats mark and john 😎 ");
   </script>
 </html>
