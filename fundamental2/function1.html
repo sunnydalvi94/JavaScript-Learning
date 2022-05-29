@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function using template literals</h1>
+    <script>
+'use strict';
+function foodProcessor(apple,orange){
+    console.log(apple,orange);
+    let juice=`juice made by ${apple} apple and ${orange} orange.`;
+    return juice;
+}
+
+let juice= foodProcessor(5,3);
+console.log(juice);
+    </script>
+</body>
+</html>
