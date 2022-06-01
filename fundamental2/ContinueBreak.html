@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Continue and Break in loop</title>
+  </head>
+  <body>
+    <script>
+      let rahul = [
+        'rahul',
+        'jadhav',
+        30,
+        'teacher',
+        ['mahesh', 'suresh', 'rajesh']
+      ]
+
+      console.log('____Only String____')
+
+      for (let i = 0; i < rahul.length; i++) {
+        if (typeof rahul[i] != 'string') {
+          continue
+        }
+        console.log(rahul[i] + ':' + typeof rahul[i])
+      }
+      // continue means here, skip that iteration
+      console.log('____Break with number____')
+
+      for (let i = 0; i < rahul.length; i++) {
+        if (typeof rahul[i] =='number') {
+          break;
+        }
+        console.log(rahul[i] + ':' + typeof rahul[i])
+      }
+    </script>
+  </body>
+</html>
