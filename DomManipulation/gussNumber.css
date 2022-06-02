@@ -1,0 +1,32 @@
+.sectionMain{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aquamarine;
+}
+.block1{
+    margin-top: 30px;
+}
+.block2{
+    margin: 40px;
+}
+.gussNumBox{
+    border: 1px soild black;
+    padding: 5px;
+    font-size: 50px;
+}
+.EntNumBox{
+    margin: 13px;
+    width: 120px;
+    padding: 5px;
+    font-size: 30px;
+}
+.CheckNum{
+    margin: 13px;
+    width: 120px;
+    padding: 5px;
+    background-color: white;
+}
+.block4{
+    margin-bottom: 30px;;
+}
