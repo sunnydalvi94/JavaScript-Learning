@@ -1,0 +1,43 @@
+// this keyword and arrow function, normal function
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const student = {
+        firstname: 'rahul',
+        age: 30,
+
+        calAge: function () {
+          // console.log(this);
+
+          // solution 1:-
+          // const self = this
+          // const trueName = function () {
+          //   console.log(self.firstname)
+
+          // }
+          //best solution 2:- using arrow function , this in arrow to parent but own context
+          const trueName = () => {
+            console.log(student.firstname)
+            console.log(student.age)
+          }
+
+          trueName()
+          // normal function within object // this keyword is undefined
+          // so it should be declared out of function id want acces within function
+        }
+      }
+      function dataStu () {
+        let name = 'tester'
+        age = 30
+        // console.log(age)
+      }
+      student.calAge()
+      dataStu()
+    </script>
+  </body>
+</html>

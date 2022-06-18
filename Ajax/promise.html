@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      'use strict'
+      const promise = new Promise((resolve, reject) => {
+        resolve('stuff worked')
+        reject('error')
+      })
+      promise.then(result => console.log(result))
+
+      // ...................Example 2.......................
+
+      const promise1 = new Promise((resove, reject) => {
+        setTimeout(resove, 100, 'Hi')
+      })
+
+      const promise2 = new Promise((resove, reject) => {
+        setTimeout(resove, 1000, 'pune')
+      })
+      const promise3 = new Promise((resove, reject) => {
+        setTimeout(resove, 3000, 'how are you !')
+      })
+      Promise.all([promise1, promise2, promise7]).then(value =>
+        console.log(value)
+      )
+    </script>
+  </body>
+</html>
